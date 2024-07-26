@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    @keyframes animationex {
+        from{
+            background-color: white;
+
+        }
+        to {
+            background-color: gainsboro;
+        }
+    }
+
+    @keyframes slideIn {
+        from{
+            transform: translateX(-100%);
+            opacity: 0;
+
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .menu {
+        display: flex;
+          justify-content: space-evenly;
+          margin: 30px;
+          padding: 30px;
+          background-color: bisque;
+    }
+
+    .menu-item {background-color: gainsboro;
+        font-size: x-large;
+        animation: animationex;
+        animation-duration: 5s;
+        padding: 10px;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        border: 5px solid gray;
+        padding: 25px;
+    }
+
+    .form-item {
+        margin: 15px;
+        animation: slideIn 1s ease-out;
+    }
+</style>
+<body>
+    <div class="menu">
+        <a class="menu-item" href="https://www.google.com/">Google</a>
+        <a class="menu-item" href="https://openai.com/index/chatgpt/">Chat GPT</a>
+        <a class="menu-item" href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=15217668839080447974&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9183273&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1">Amazon</a>
+        <a class="menu-item" href="https://www.wipro.com/">Wipro</a>
+    </div>
+
+    <div class="form-container">
+        <input class="form-item" type="text" placeholder="Name">
+        <input class="form-item" type="email" placeholder="Email">
+        <button class="form-item" type="submit">Submit</button>
+    </div>
+</body>
+</html>
