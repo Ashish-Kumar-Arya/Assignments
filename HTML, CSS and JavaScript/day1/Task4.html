@@ -49,11 +49,57 @@
         justify-content: center;
         border: 5px solid gray;
         padding: 25px;
+        flex-wrap: wrap;
     }
 
     .form-item {
         margin: 15px;
         animation: slideIn 1s ease-out;
+    }
+
+    /* For large desktops */
+    @media (max-width: 1200px) {
+        .menu-item {
+            font-size: 1.1em;
+        }
+        .form-item {
+            font-size: 1em;
+        }
+    }
+
+    /* For tablets and smaller desktops */
+    @media (max-width: 1024px) {
+        .menu-item {
+            font-size: 1em;
+        }
+        .form-item {
+            font-size: 0.9em;
+        }
+    }
+
+    /* For mobile screens */
+    @media (max-width: 768px) {
+        .menu-item {
+            font-size: 0.9em;
+        }
+        .form-item {
+            font-size: 0.8;
+        }
+        .form-container {
+            flex-direction: column;
+        }
+    }
+
+    /* For very small screens */
+    @media (max-width: 480px) {
+        .menu-item {
+            font-size: 0.8em;
+            padding: 0.5em;
+        }
+        .form-item {
+            font-size: 0.7em;
+            margin: 0.3em;
+        }
     }
 </style>
 <body>
