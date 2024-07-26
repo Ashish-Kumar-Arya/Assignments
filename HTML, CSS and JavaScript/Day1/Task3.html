@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        border: 5px solid gray;
+        padding: 25px;
+        margin: 50px;
+        flex-wrap: wrap;
+        background-color: antiquewhite;
+    }
+
+    .navItem {
+        font-size: x-large;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .c1 {
+        padding: 15px;
+    }
+    .c2 {
+        padding: 15px;
+    }
+    .c3 {
+        padding: 15px;
+    }
+
+    #table {
+        margin: 50px;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    article {
+        margin: 50px;
+    }
+
+    #form {
+        margin: 50px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        border: 5px solid black;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 30px;
+        margin: 30px;
+    }
+    .container-item {
+        border: 5px solid greenyellow;
+        background-color: azure;
+        padding: 30px;
+        margin: 30px;
+        font-size: x-large;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        border: 5px solid gray;
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+
+    .form-item {
+        margin: 15px;
+        font-size: x-large;
+    }
+</style>
+<body>
+    <head>
+        <h1 class="heading">This is a simple HTML page.</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="navItem"><a href="#table" class="nav-link">Table</a></li>
+                <li class="navItem"><a href="#form" class="nav-link">Form</a></li>
+            </ul>
+        </nav>
+    </head>
+    <article>
+        <p>This webpage contains tags (like article, section), a table, and a form. </p>
+    </article>
+    <section id="table">
+        <h3>Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ashish</td>
+                    <td>11</td>
+                    <td>Uttarakhand</td>
+                </tr>
+                <tr>
+                    <td>Rohan</td>
+                    <td>21</td>
+                    <td>Delhi</td>
+                </tr>
+                <tr>
+                    <td>Kavita</td>
+                    <td>13</td>
+                    <td>Punjab</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form">
+        <h3>Form</h3>
+        <div class="form-container">
+            <input class="form-item"  type="text" placeholder="Name">
+            <input class="form-item" type="email" placeholder="Email">
+            <button class="form-item"" type="submit">Submit</button>
+        </div>
+    </section>
+
+    <div class="flex-container">
+        <div class="container-item">one</div>
+        <div class="container-item">two</div>
+        <div class="container-item">three</div>
+        <div class="container-item">four</div>
+        <div class="container-item">five</div>
+        <div class="container-item">six</div>
+        <div class="container-item">seven</div>
+        <div class="container-item">eight</div>
+        <div class="container-item">nine</div>
+        <div class="container-item">ten</div>
+    </div>
+</body>
+</html>
