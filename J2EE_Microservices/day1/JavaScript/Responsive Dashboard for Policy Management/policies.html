@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .sort {
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="newuser.html">New User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active">Policies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+    </ul>
+
+    <button class="sort btn btn-primary" type="button">Sort</button>
+
+    <ul class="list-group" id="policyList">
+      <li class="list-group-item list-items-to-sort">
+        <h5>Data Privacy Policy</h5>
+        <p>To ensure the protection of personal data and compliance with applicable privacy laws.</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#dataPrivacy">Show more</button>
+      </li>
+      <li class="list-group-item list-items-to-sort">
+        <h5>Remote Work Policy</h5>
+        <p>To outline the guidelines and expectations for employees working remotely.</p>        
+        <button type="button" data-bs-toggle="modal" data-bs-target="#remoteWork">Show more</button>
+      </li>
+      <li class="list-group-item list-items-to-sort">
+        <h5>Code of Conduct</h5>
+        <p>To establish the standards of behavior expected from employees and representatives.</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#codeOfConduct">Show more</button>
+      </li>
+      <li class="list-group-item list-items-to-sort">
+        <h5>Travel Policy</h5>
+        <p>To provide guidelines for employee travel on behalf of the company.</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#travelPolicy">Show more</button>
+      </li>
+      <li class="list-group-item list-items-to-sort">
+        <h5>Employee Benefits Policy</h5>
+        <p>To outline the benefits provided to employees and the eligibility criteria.</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#empBenefits">Show more</button>
+      </li>
+      
+<!--Modal for data privacy policy-->
+<div class="modal fade" id="dataPrivacy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Data Privacy Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Data Collection: We collect personal data only for legitimate purposes and with user consent.</li>
+          <li class="list-group-item">Data Usage: Personal data will be used exclusively for the purposes for which it was collected.</li>
+          <li class="list-group-item">Data Storage: Personal data will be stored securely and protected against unauthorized access.</li>
+          <li class="list-group-item">Data Sharing: Personal data will not be shared with third parties without user consent, except as required by law.</li>
+          <li class="list-group-item">User Rights: Users have the right to access, correct, or delete their personal data. Requests can be submitted via our support channel.</li>
+          <li class="list-group-item">Policy Changes: This policy may be updated periodically. Users will be notified of any significant changes.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Remote work policy-->
+<div class="modal fade" id="remoteWork" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Remote Work Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Eligibility: Remote work is available to employees based on job role and performance. Requests must be approved by a supervisor.</li>
+          <li class="list-group-item">Work Hours: Remote employees must adhere to their regular work hours unless otherwise agreed upon.</li>
+          <li class="list-group-item">Communication: Remote employees are required to maintain regular communication with their team and supervisor via designated channels.</li>
+          <li class="list-group-item">Productivity: Employees must meet their performance goals and deliverables as if they were working on-site.</li>
+          <li class="list-group-item">Equipment: Employees must use company-approved equipment and software for remote work. Any issues with equipment must be reported immediately.</li>
+          <li class="list-group-item">Security: Employees must follow all company security protocols, including the use of VPNs and secure passwords.</li>
+         </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Code of conduct-->
+<div class="modal fade" id="codeOfConduct" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Code of Conduct</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Professionalism: Employees must conduct themselves in a professional manner, treating colleagues and clients with respect and courtesy.</li>
+          <li class="list-group-item">Integrity: Employees must act with honesty and integrity in all business dealings.</li>
+          <li class="list-group-item">Confidentiality: Employees must maintain the confidentiality of sensitive information and not disclose it without authorization.</li>
+          <li class="list-group-item">Compliance: Employees must comply with all company policies, laws, and regulations relevant to their role.</li>
+          <li class="list-group-item">Conflict of Interest: Employees must avoid situations where personal interests conflict with company interests.</li>
+          <li class="list-group-item">Disciplinary Actions: Violations of this code may result in disciplinary action up to and including termination.</li>
+         </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Travel policy-->
+<div class="modal fade" id="travelPolicy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Travel Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Travel Authorization: All travel must be pre-approved by a supervisor or manager.</li>
+          <li class="list-group-item">Expenses: Employees are entitled to reimbursement for reasonable travel expenses, including transportation, lodging, and meals. Receipts must be provided.</li>
+          <li class="list-group-item">Booking: Travel arrangements should be booked through the company’s preferred travel agency to ensure cost-effectiveness.</li>
+          <li class="list-group-item">Travel Safety: Employees should follow safety guidelines and be aware of any travel advisories or restrictions.</li>
+          <li class="list-group-item">Reporting: Employees must submit a travel report and expense claim within one week of returning from a business trip.</li>
+         </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Employee benefits policy-->
+<div class="modal fade" id="empBenefits" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Employee Benefits Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Health Insurance: Full-time employees are eligible for health insurance coverage, including medical, dental, and vision plans.</li>
+          <li class="list-group-item">Retirement Plan: Employees are eligible to participate in the company’s retirement plan, with employer contributions matching up to a specified percentage.</li>
+          <li class="list-group-item">Paid Time Off (PTO): Employees accrue PTO based on their length of service and work hours. PTO can be used for vacations, sick leave, and personal time.</li>
+          <li class="list-group-item">Professional Development: The company supports professional development through training programs and educational assistance.</li>
+          <li class="list-group-item">Work-Life Balance: The company promotes a healthy work-life balance and offers flexible work arrangements where possible.</li>
+         </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="policies.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   </body>
+</html>

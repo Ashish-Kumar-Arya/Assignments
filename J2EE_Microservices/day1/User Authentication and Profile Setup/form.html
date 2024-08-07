@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+  <script src="login.js" type="module" defer></script>
+  <script src="register.js" type="module" defer></script>
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <form class="loginForm">
+      <h2>Login</h2>
+      <div class="emailBox">
+        <label class="email">Email</label><br>
+        <input class="input" id="login-email" type="text" name="Email" placeholder="Enter email">
+      </div>
+      <div class="passwordBox">
+        <label class="password">Password</label><br>
+        <input class="input" id="login-password" type="password" name="Password" placeholder="Enter password">
+      </div>
+        <button class="submit-button" type="submit">Submit</button>
+      <p id="message"></p>
+    </form>
+  </div>
+  <div class="container" id="registerContainer">
+    <form class="loginForm">
+      <h2>Registration</h2>
+      <div class="emailBox">
+        <label class="email">Email</label><br>
+        <input class="input" id="register-email" type="text" name="Email" placeholder="Enter email">
+      </div>
+      <div class="passwordBox">
+        <label class="password">Password</label><br>
+        <input class="input" id="register-password" type="password" name="Password" placeholder="Enter password">
+        <label class="password">Confirm Password</label><br>
+        <input class="input" id="confirm-password" type="password" name="Password" placeholder="Enter password">
+      </div>
+        <button class="submit-button" type="submit">Submit</button>
+      <p id="register-message"></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.password, .email {
+  font-size: x-large;
+}
+
+.input {
+  height: 20px;
+}
+
+.emailBox {
+  margin-bottom: 15px;
+}
+
+.passwordBox {
+  margin-bottom: 15px;
+}
+
+.loginForm, .registrationForm {
+  display: grid;
+  place-content: center;
+  background-color: beige;
+  padding: 15px;
+  height: 300px;
+  width: 250px;
+  border: 5px solid rgb(252, 252, 128);
+  border-radius: 25px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.submit-button {
+  font-size: medium;
+}
+
+.new-user {
+  font-size: medium;
+}
