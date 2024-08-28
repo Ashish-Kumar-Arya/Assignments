@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getDateTime()
+        {
+            var url="http://date.jsontest.com/"
+            var req;
+            if(window.XMLHttpRequest)
+            {
+                req=new XMLHttpRequest();
+            }
+            else if(window.ActiveXObject)
+            {
+                req=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            req.onreadystatechange = function()
+            {
+                if(req.readyState==4 && req.status==200)
+                {
+                    var jsonObj=JSON.parse(req.responseText);
+                    document.getElementById("date").innerHTML=jsonObj.date;
+                    document.getElementById("time").innerHTML=jsonObj.time;
+;                }
+            }
+            req.open("GET",url,true);
+            req.send(null);
+        }
+    </script>
+</head>
+<body>
+    Date : <span id="date"></span><br>
+    Time : <span id="time"></span><br>
+    <button type="button" onclick="getDateTime()">Get Date and Time</button>
+</body>
+</html>
