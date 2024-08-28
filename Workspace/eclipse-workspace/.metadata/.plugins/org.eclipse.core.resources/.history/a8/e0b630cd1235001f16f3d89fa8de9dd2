@@ -1,0 +1,25 @@
+package com.example.java;
+
+public class LinkedListExample {
+
+	Node head;
+	
+	public class Node {
+		int data;
+		Node next;
+		
+		Node(int d) {
+			data = d;
+			next=null;
+		}
+	}
+	
+	public static LinkedListExample insert(LinkedListExample list, int data) {
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

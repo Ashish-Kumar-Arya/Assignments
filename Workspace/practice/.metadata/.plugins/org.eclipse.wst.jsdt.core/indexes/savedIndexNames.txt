@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/rps/practice/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+737310927.index
+40756448.index
+2710363012.index
+616462489.index
+3197802747.index
+1859611864.index
+137663481.index

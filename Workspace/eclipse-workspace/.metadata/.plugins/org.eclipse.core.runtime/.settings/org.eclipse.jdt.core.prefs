@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
+org.eclipse.jdt.core.compiler.compliance=21
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=21
+org.eclipse.jdt.core.userLibrary.MySQLDrivers=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/rps/Downloads/jar_files/mysql-connector-java-8.0.28.jar"/>\n\t<archive path\="/home/rps/Downloads/jar_files/protobuf-java-3.11.4.jar"/>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.MySQLDrivers1=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/rps/Downloads/jar_files/mysql-connector-java-8.0.28.jar"/>\n\t<archive path\="/home/rps/Downloads/jar_files/protobuf-java-3.11.4.jar"/>\n</userlibrary>\n

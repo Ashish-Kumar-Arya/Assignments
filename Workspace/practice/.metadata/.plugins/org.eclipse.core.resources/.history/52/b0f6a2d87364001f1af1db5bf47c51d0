@@ -1,0 +1,6 @@
+package jdbc.dao;
+
+public class Student {
+	String name;
+	int rollno;
+}

@@ -1,0 +1,9 @@
+package jdbc.dao;
+
+public class JdbcDaoDemo {
+	public static void main(String[] args) throws Exception {
+	StudentDAO dao = new StudentDAO();
+	Student s1 = dao.getStduent(2);
+	System.out.println(s1.name);
+	}
+}
